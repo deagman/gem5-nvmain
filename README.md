@@ -43,15 +43,20 @@ trace文件nvmain只提供了一个，要生成自己的trace文件的话，需�
 简单介绍如何打印trace文件
 **trace文件首的NVMV0表示默认olddata都是0，NVMV1下才会读取olddata（具体在traceReader可见）**
 **修改PCM_MLC_example.config中PrintPreTrace为true**具体如下
+
 ; Simulation control parameters
 PrintPreTrace false --》true
 PreTraceFile pcm.trace --生成的trace文件名
+
 **测试hello_world.nvt**
 会发现Config生成了pcm.trace文件。
 
 nvmain中的trace只是一个展示功能而已，nvmain也不能真的对内存条进行操作。换而言之，对trace中同一个地址写两次数据，下一次的旧数据并不会是上一次写的数据。例如：
+
 0 0x1 W ffff 0000（对1地址写ffff，旧数据为0000，这里为了表示简单忽略了格式）
+
 1 0x1 W 0001 0000 (对1地址写0001，旧数据为0000)
+
 这两者并不会有任何矛盾，因为nvmain并没有真的维护一个内存空间。
 
 ### 4.nvmain的编码算法
