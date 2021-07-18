@@ -80,7 +80,9 @@ https://www.jianshu.com/p/af2efe552a11
 
 ## 2. gem5
 ### 2.1 gem5编译与测试
-gem5下载编译在https://www.jianshu.com/p/af2efe552a11可见，编译会花很长时间，大概30分钟。
+gem5下载编译在https://www.jianshu.com/p/af2efe552a11
+编译会花很长时间，大概30分钟。
+
 gem5测试命令
 
 ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello
