@@ -33,7 +33,7 @@ scons --build-type=fast
 ./nvmain.fast Config/PCM_MLC_example.config Tests/Traces/hello_world.nvt 1000000
 
 Config/PCM_MLC_example.config为配置文件，配置文件里设置了内存的诸多参数，如能量、延迟、容量、行列规格等等，还可以自己添加参数进去（编码算法中会提到）
-Tests/Traces/hello_world.nvt为trace文件，就是内存条中每个存储周期内某个地址发生的读写变化，格式为**CYCLE OP ADDRESS DATA OLDDATA THREADID**。请仔细理解traceReader和traceWriter文件，里面提到了nvmain如何读取和生成trace文件
+Tests/Traces/hello_world.nvt为trace文件，就是内存条中每个存储周期内某个地址发生的读写变化，格式为**CYCLE OP ADDRESS DATA OLDDATA THREADID**。仔细理解traceReader和traceWriter文件，里面提到了nvmain如何读取和生成trace文件。
 1000000 为周期数，简单点说，代表周期越多，trace跑的越多
 
 配置文件大同小异，我的测试都是使用Config/PCM_MLC_example.config文件，主要改变的是1.编码算法种类参数，2.算法中需要的不同参数。详情见PCM_MLC_example.config
