@@ -47,7 +47,9 @@ trace文件nvmain只提供了一个，要生成自己的trace文件的话，需�
 **修改PCM_MLC_example.config中PrintPreTrace为true**具体如下
 
 ; Simulation control parameters
+
 PrintPreTrace false --》true
+
 PreTraceFile pcm.trace --生成的trace文件名
 
 **测试hello_world.nvt**
