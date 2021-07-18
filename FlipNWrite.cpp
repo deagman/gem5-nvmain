@@ -199,7 +199,7 @@ ncycle_t FlipNWrite::Write( NVMainRequest *request )
      * and it only focous on the difference between the data in the memory currently and the data to be written.
      * However,I don't comment this.
      */
-
+    /*
      for( uint64_t i = 0; i < flipPartitions; i++ )
      {
          uint64_t curAddr = row * rowPartitions + col * flipPartitions + i;  //flipPartitions
@@ -209,7 +209,7 @@ ncycle_t FlipNWrite::Write( NVMainRequest *request )
              InvertData( oldData, i*fpSize, (i+1)*fpSize );
          }
      }
-
+     */
     /* Check each byte to see if it was modified */
     for( uint64_t i = 0; i < wordSize; ++i )
     {
