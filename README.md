@@ -110,7 +110,8 @@ scons EXTRAS=../nvmain build/X86/gem5.opt
 PCM_MLC_example.config的打印参数为真。这里重要的是的是**TimingSimpleCPU**，**cacheline_size=64**。前者决定CPU类型，后者的64表示一个块是64字节，和nvmain的默认内存块大小一致，以上命令可以生成trace文件
 
 ## 3.spec cpu2006
-spec安装和运行教程如下https://blog.csdn.net/qq_38877888/article/details/108759538（虽然这个也是外网的）
+spec安装和运行教程如下https://blog.csdn.net/qq_38877888/article/details/108759538
+（虽然这个也是外网的）
 
 里面提到了3个脚本文件，实际上由于各种版本原因，脚本有些地方要删改
 
