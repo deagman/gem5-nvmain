@@ -14,7 +14,7 @@ https://www.jianshu.com/p/af2efe552a11
 ## nvmain和gem5两者处在同一个目录下，避免路径问题
 
 ## 1. nvmain
-首先，nvmain的官网早就没了，本身软件也早在很多年前就停止更新了，网上能够找到nvmain相关的使用屈指可数，重复引用实在是太多了。因此希望找到更好的参考文献是徒劳的。
+首先，nvmain的官网早就没了，本身软件也早在很多年前就停止更新了，网上能够找到nvmain相关的使用屈指可数，重复引用实在是太多了。这里也是整合了一些已有的参考文献。
 ### 1.1 nvmain的下载和编译
 gem5和nvmain的资源都在此：
 https://github.com/deagman/gem5-nvmain-hybrid-simulator
