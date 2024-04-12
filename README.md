@@ -1,7 +1,7 @@
 ## gem5-nvmain
 ## Author: HugoZhang 
 ## Date: 2021.4
-### Any questions please Email 1315453562@qq.com or HugoZhang99@outlook.com or leave message in Website https://github.com/deagman
+### Any questions please Email 1315453562@qq.com or HugoZhang99@outlook.com or leave your questions in Issue.
 主要解决了3个问题
 ## 1.nvmain的测试，nvmain编码算法的编写，nvmain与gem5的整合
 ## 2.gem5测试程序
